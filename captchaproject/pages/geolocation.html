@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geolocation with Polygon Boundaries</title>
+  <link rel="stylesheet" href="../css/geolocation.css">
+</head>
+<body>
+  <header>
+    <h1>CAMPUS ATTENDANCE NIT DELHI</h1>
+    <p>Track your location on campus in real-time.</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <button onclick="getLocation()">Start Tracking</button>
+      <button onclick="stopTracking()">Stop Tracking</button>
+    </div>
+
+    <p id="demo" class="status">Your location status will appear here.</p>
+
+    <div id="map"></div>
+  </main>
+
+  <!-- Load Google Maps API -->
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer
+></script>
+
+
+
+  <script src="../js/script_geolocation.js"></script>
+</body>
+</html>
